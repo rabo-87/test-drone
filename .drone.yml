@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: hello-world
+
+steps:
+- name: docker  
+  image: plugins/docker
+  settings:
+    # registry: docker.io
+    repo: rabo291/test-drone
+    username:
+      from_secret: rabo291
+    password:
+      from_secret: RaboAkther@620
+    tags: 
+      - latest
