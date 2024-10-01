@@ -9,8 +9,8 @@ steps:
     # registry: docker.io
     repo: rabo291/test-drone
     username:
-      from_secret: rabo291
+      from_secret: docker_username
     password:
-      from_secret: RaboAkther@620
+      from_secret: docker_password
     tags: 
       - latest
